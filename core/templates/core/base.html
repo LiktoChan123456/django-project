@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+  <title>{%block title%}{%endblock%}</title>
+  <style>
+
+    .date-created {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    .logo {
+      font-size: 9rem;
+      font-family: "Lobster";
+      font-weight: bold;
+      color: #007bff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white; /* Update the background color to white */
+      padding: 10px 20px;
+      color: #333; /* Update text color to a dark color */
+    }
+
+    .navbar-menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar-item {
+      font-size: 16px;
+      text-decoration: none;
+      color: #333; /* Update text color to a dark color */
+    }
+
+    .navbar-item:hover {
+      background-color: #B8E2F2;
+      color: black;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .further-padding {
+        margin-top: 100px;
+    }
+    .aesthetic {
+        background-color: #00d1b2;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+
+        <div class="navbar-brand">
+          <a class="navbar-item logo" href="#">
+            TechTipsGo
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#">About</a>
+          <a class="navbar-item" href="#">Blog</a>
+          <a class="navbar-item" href="%">Forum</a>
+        </div>
+
+      <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field has-addons">
+              <div class="control">
+                <input class="input" type="text" placeholder="Search...">
+              </div>
+              <div class="control">
+                <a class="button is-info">
+                  Search
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">User</a>
+              <div class="navbar-dropdown">
+              <a class="navbar-item" href="#">Profile</a>
+              <a class="navbar-item" href="#">Settings</a>
+              <a class="navbar-item" href="#">Personal information</a>
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="#">Logout</a>
+            </div>
+          </div>
+      </div>
+  </nav>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero aesthetic is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Welcome to Our Stylish Blog
+                </h1>
+                <h2 class="subtitle">
+                    We are dedicated to supporting you in knowledge enhance of PC technoglogy
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="container mt-6">
+        <div class="columns">
+            <!-- Blog Posts -->
+            <div class="column is-three-quarters">
+                <div class="content">
+                    <h1 class="title">Latest Posts</h1>
+
+                    <!-- Blog Post 1 -->
+                    {%block content%}
+                    {%endblock%}
+
+                    <!-- Add more blog posts here -->
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="column">
+                <div class="box mt-6 further-padding">
+                    <h2 class="title is-5">Categories</h2>
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="footer aesthetic">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Stylish Blog</strong> &copy; 2023. All rights reserved by techtipsgo.
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</html>

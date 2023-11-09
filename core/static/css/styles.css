@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('path-to-font/Lobster.woff') format('woff'); /* Replace 'path-to-font' with the actual path to your font file */
+    /* Add additional font formats here for better compatibility */
+}
