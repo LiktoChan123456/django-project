@@ -12,3 +12,6 @@ def about(request):
 
 def cssgrid(request):
     return render(request,"core/cssgrid.html")
+
+def bootstrap(request):
+    return render (request,"core/bootstrap.html")

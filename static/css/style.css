@@ -1,0 +1,27 @@
+.card-text {
+    font-size: 19px;
+}
+
+.post-img-regulator {
+    object-fit: cover; /* or contain, depending on your preference */
+}
+
+.blog-title {
+    font-family: "Vina Sans", sans-serif;
+}
+
+.lobster {
+    font-family: "Lobster", cursive;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+.roboto{
+    font-family: 'Roboto Slab', serif;
+}
